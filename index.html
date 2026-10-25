@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>श्री हरि इन्टरप्राइजेज - टाइल्स, मार्बल और हार्डवेयर का संपूर्ण समाधान | मननपुर, चानन</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#0d1b3e',
+            brandRed: '#d91b24',
+            brandGold: '#f59e0b',
+            brandYellow: '#facc15',
+            brandLight: '#f8fafc'
+          },
+          fontFamily: {
+            hindi: ['"Noto Sans Devanagari"', 'Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts for Devanagari & Modern UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+    }
+    .banner-gradient {
+      background: linear-gradient(135deg, #0d1b3e 0%, #172554 60%, #1e3a8a 100%);
+    }
+    .red-gradient {
+      background: linear-gradient(135deg, #d91b24 0%, #b91c1c 100%);
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #facc15 0%, #f59e0b 100%);
+    }
+    /* Hide scrollbar for category tabs */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brandRed selection:text-white">
+
+  <!-- Top Auspicious & Contact Bar -->
+  <div class="bg-amber-400 text-slate-900 text-xs sm:text-sm font-semibold py-1.5 px-4 border-b border-amber-500 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-2 text-brandRed font-bold tracking-wide">
+        <span>॥ श्री गणेशाय नमः ॥</span>
+        <span class="text-slate-700 font-medium hidden sm:inline">|</span>
+        <span class="hidden sm:inline">॥ श्री हरये नमः ॥</span>
+      </div>
+      <div class="flex items-center space-x-4 text-xs sm:text-sm">
+        <a href="tel:9708447325" class="hover:text-brandRed transition flex items-center gap-1 font-bold">
+          <i class="fa-solid fa-phone text-brandRed"></i> 9708447325
+        </a>
+        <a href="tel:6201954987" class="hover:text-brandRed transition flex items-center gap-1 font-bold">
+          <i class="fa-solid fa-phone text-brandRed"></i> 6201954987
+        </a>
+        <span class="hidden md:inline-flex items-center gap-1 text-slate-800 font-medium">
+          <i class="fa-solid fa-truck-fast text-brandRed"></i> पूरे चानन क्षेत्र में होम डिलीवरी
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3.5 flex items-center justify-between">
+      
+      <!-- Logo & Store Name -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-brandRed flex items-center justify-center text-white font-black text-2xl shadow-md border-2 border-brandYellow transition-transform group-hover:scale-105">
+          <span>श्री</span>
+        </div>
+        <div>
+          <h1 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-brandRed tracking-tight leading-tight">
+            श्री हरि इन्टरप्राइजेज
+          </h1>
+          <p class="text-[11px] sm:text-xs font-semibold text-brandBlue tracking-wide flex items-center gap-1">
+            <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            मननपुर बाजार, चानन (बिहार)
+          </p>
+        </div>
+      </a>
+
+      <!-- Quick Action Buttons for Desktop -->
+      <div class="hidden lg:flex items-center space-x-3">
+        <a href="#products" class="px-4 py-2 text-sm font-bold text-slate-700 hover:text-brandRed transition">उत्पाद देखें</a>
+        <a href="#why-us" class="px-4 py-2 text-sm font-bold text-slate-700 hover:text-brandRed transition">विशेषताएं</a>
+        <a href="#contact" class="px-4 py-2 text-sm font-bold text-slate-700 hover:text-brandRed transition">दुकान का पता</a>
+        
+        <a href="https://wa.me/919708447325?text=नमस्ते%20मुकेश%20जी,%20मुझे%20सामान%20का%20रेट%20जानना%20है।" 
+           target="_blank"
+           class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow flex items-center gap-2 transition hover:shadow-emerald-200 hover:shadow-lg">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          व्हाट्सएप पूछताछ
+        </a>
+
+        <a href="tel:9708447325" 
+           class="px-4 py-2 rounded-lg bg-brandRed hover:bg-red-700 text-white font-bold text-sm shadow flex items-center gap-2 transition">
+          <i class="fa-solid fa-phone"></i>
+          कॉल करें
+        </a>
+      </div>
+
+      <!-- Mobile Call Action -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <a href="tel:9708447325" class="bg-brandRed text-white px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 shadow">
+          <i class="fa-solid fa-phone"></i> कॉल
+        </a>
+        <a href="https://wa.me/919708447325?text=नमस्ते%20श्री%20हरि%20इन्टरप्राइजेज,%20मुझे%20सामान%20की%20कीमत%20और%20उपलब्धता%20जाननी%20है।" target="_blank" class="bg-emerald-600 text-white p-2 rounded-lg text-xs font-bold flex items-center justify-center shadow">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="banner-gradient text-white relative overflow-hidden pt-8 pb-14 sm:py-16">
+    <!-- Decorative Glow & Shapes -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-brandRed/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-brandYellow/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Signboard Recreation Badge -->
+      <div class="inline-flex items-center gap-2 bg-yellow-400/20 border border-yellow-400/40 text-yellow-300 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-4 backdrop-blur-sm">
+        <i class="fa-solid fa-certificate text-yellow-400"></i>
+        <span>विश्वसनीय हार्डवेयर एवं बिल्डिंग मैटेरियल स्टोर</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6">
+          <h1 class="text-3xl sm:text-5xl lg:text-5xl font-black leading-tight text-white">
+            <span class="text-yellow-400">श्री हरि इन्टरप्राइजेज</span><br>
+            <span class="text-2xl sm:text-3xl lg:text-4xl text-slate-100 font-extrabold">
+              टाइल्स, मार्बल और हार्डवेयर का संपूर्ण समाधान
+            </span>
+          </h1>
+
+          <p class="text-slate-200 text-sm sm:text-base leading-relaxed font-medium">
+            हमारे यहाँ <strong class="text-yellow-300">टाइल्स, मार्बल, ग्रेनाइट, प्लम्बरिंग, सेनेटरी आइटम, समरसेबुल, PVC पाइप, चापाकल एवं हार्डवेयर के सभी पार्ट्स</strong> उचित एवं थोक मूल्य पर प्राप्त करें। घर बैठे ऑर्डर करें और पूरे चानन में डिलीवरी पाएं।
+          </p>
+
+          <!-- Owner & Address Snippet -->
+          <div class="p-3.5 bg-white/10 rounded-xl backdrop-blur-md border border-white/15 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm">
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-full bg-brandRed flex items-center justify-center font-bold text-white shadow">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div>
+                <span class="text-slate-300 block text-[11px]">प्रोप्राइटर:</span>
+                <span class="font-bold text-white text-sm">मुकेश कुमार</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 text-slate-200">
+              <i class="fa-solid fa-location-dot text-yellow-400 text-base"></i>
+              <span>मननपुर बाजार, दुर्गा मंदिर रोड, स्टेट बैंक के बगल में (चानन)</span>
+            </div>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="tel:9708447325" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-brandRed hover:bg-red-700 text-white font-bold text-base flex items-center justify-center gap-2 shadow-lg shadow-red-900/30 transition transform hover:-translate-y-0.5">
+              <i class="fa-solid fa-phone-volume"></i>
+              तुरंत कॉल करें (9708447325)
+            </a>
+            
+            <a href="https://wa.me/919708447325?text=नमस्ते%20मुकेश%20जी,%20मुझे%20सामान%20की%20कीमत%20और%20उपलब्धता%20की%20जानकारी%20चाहिए।" target="_blank" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/30 transition transform hover:-translate-y-0.5">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              व्हाट्सएप पर रेट पूछें
+            </a>
+
+            <a href="#products" class="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-semibold text-sm flex items-center justify-center gap-2 border border-white/20 transition">
+              <i class="fa-solid fa-boxes-stacked"></i>
+              सभी उत्पाद देखें
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="grid grid-cols-3 gap-2 pt-3 border-t border-white/15 text-center text-xs">
+            <div class="p-2 rounded-lg bg-white/5">
+              <i class="fa-solid fa-truck-moving text-yellow-400 text-base mb-1 block"></i>
+              <span class="font-bold text-white block">होम डिलीवरी</span>
+              <span class="text-[10px] text-slate-300">पूरे चानन क्षेत्र में</span>
+            </div>
+            <div class="p-2 rounded-lg bg-white/5">
+              <i class="fa-solid fa-hand-holding-dollar text-emerald-400 text-base mb-1 block"></i>
+              <span class="font-bold text-white block">उचित मूल्य</span>
+              <span class="text-[10px] text-slate-300">थोक व खुदरा दर</span>
+            </div>
+            <div class="p-2 rounded-lg bg-white/5">
+              <i class="fa-solid fa-money-bill-wave text-yellow-400 text-base mb-1 block"></i>
+              <span class="font-bold text-white block">कैश व UPI</span>
+              <span class="text-[10px] text-slate-300">आसान भुगतान सुविधा</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Card (Banner Tribute) -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-2xl text-slate-800 border-4 border-yellow-400 relative">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brandRed text-white px-4 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider shadow">
+              दुकान का मुख्य बैनर विवरण
+            </div>
+
+            <!-- Banner Replica Box -->
+            <div class="bg-gradient-to-r from-red-600 via-red-700 to-red-800 text-white text-center p-3.5 rounded-xl mt-2 mb-4 shadow">
+              <p class="text-xs font-semibold text-yellow-300 tracking-wider">॥ श्री गणेशाय नमः ॥</p>
+              <h2 class="text-2xl sm:text-3xl font-black text-white tracking-wide my-1">श्री हरि इन्टरप्राइजेज</h2>
+              <div class="bg-brandBlue text-yellow-300 text-xs py-1 px-2 rounded-md font-bold mt-1 inline-block">
+                मननपुर बाजार, दुर्गा मंदिर रोड, स्टेट बैंक के बगल में (चानन)
+              </div>
+            </div>
+
+            <!-- Highlights Grid -->
+            <div class="space-y-2.5 text-xs sm:text-sm font-medium">
+              <div class="flex items-center justify-between p-2.5 bg-slate-100 rounded-lg">
+                <span class="text-slate-600 flex items-center gap-2">
+                  <i class="fa-solid fa-layer-group text-brandRed"></i> टाइल्स व मार्बल:
+                </span>
+                <span class="font-bold text-slate-900">विभिन्न डिज़ाइन उपलब्ध</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 bg-slate-100 rounded-lg">
+                <span class="text-slate-600 flex items-center gap-2">
+                  <i class="fa-solid fa-faucet-drip text-blue-600"></i> प्लंबिंग व PVC:
+                </span>
+                <span class="font-bold text-slate-900">ब्रांडेड पाइप एवं फिटिंग्स</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 bg-slate-100 rounded-lg">
+                <span class="text-slate-600 flex items-center gap-2">
+                  <i class="fa-solid fa-water text-cyan-600"></i> मोटर, टंकी व चापाकल:
+                </span>
+                <span class="font-bold text-slate-900">समरसेबुल एवं टंकी उपलब्ध</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 bg-slate-100 rounded-lg">
+                <span class="text-slate-600 flex items-center gap-2">
+                  <i class="fa-solid fa-door-closed text-amber-700"></i> प्लाईवुड व हार्डवेयर:
+                </span>
+                <span class="font-bold text-slate-900">मजबूत दरवाजे व पार्ट्स</span>
+              </div>
+            </div>
+
+            <!-- Banner Footer Info -->
+            <div class="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between text-xs">
+              <div>
+                <span class="text-slate-500 block">प्रोप्राइटर:</span>
+                <span class="font-bold text-brandRed text-sm">मुकेश कुमार</span>
+              </div>
+              <div class="text-right">
+                <span class="text-slate-500 block">संपर्क सूत्र:</span>
+                <span class="font-bold text-slate-800 text-sm">9708447325 / 6201954987</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notice Bar for Pricing (Transparent Policy) -->
+  <section class="bg-brandBlue text-white py-3 px-4 border-t-2 border-brandYellow">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs sm:text-sm text-center sm:text-left">
+      <div class="flex items-center gap-2 font-medium">
+        <i class="fa-solid fa-bullhorn text-brandYellow text-base"></i>
+        <span><strong>मूल्य सूचना:</strong> बाजार के थोक रेट और ब्रांड के अनुसार सटीक कीमत जानने हेतु सीधे कॉल या व्हाट्सएप करें।</span>
+      </div>
+      <a href="https://wa.me/919708447325?text=नमस्ते,%20मुझे%20आज%20का%20लेटेस्ट%20रेट%20जानना%20है।" target="_blank" class="inline-flex items-center gap-1.5 font-bold text-brandYellow hover:underline whitespace-nowrap">
+        रेट लिस्ट हेतु मैसेज करें <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Product Catalog Section -->
+  <section id="products" class="py-14 sm:py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+        <span class="text-brandRed font-bold text-xs sm:text-sm uppercase tracking-wider bg-red-100 px-3 py-1 rounded-full">
+          हमारे उत्पाद एवं सामग्री
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+          घर निर्माण और फिनिशिंग का पूरा सामान
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          सभी उत्पाद प्रीमियम क्वालिटी और विश्वसनीय ब्रांड्स में उपलब्ध हैं। किसी भी सामान की कीमत और होम डिलीवरी की जानकारी के लिए एक क्लिक में संपर्क करें।
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 no-scrollbar justify-start sm:justify-center">
+        <button onclick="filterCategory('all')" class="cat-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap bg-brandRed text-white shadow">
+          सभी सामान (All)
+        </button>
+        <button onclick="filterCategory('tiles')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">
+          टाइल्स एवं मार्बल
+        </button>
+        <button onclick="filterCategory('plumbing')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">
+          प्लंबिंग एवं PVC पाइप्स
+        </button>
+        <button onclick="filterCategory('sanitary')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">
+          सैनिटरी एवं बाथवेयर
+        </button>
+        <button onclick="filterCategory('motor')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">
+          मोटर, टंकी एवं चापाकल
+        </button>
+        <button onclick="filterCategory('hardware')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">
+          प्लाईवुड, दरवाजे व हार्डवेयर
+        </button>
+      </div>
+
+      <!-- Products Grid (No Prices, Only Inquire Buttons) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="products-container">
+
+        <!-- 1. फ्लोर व वॉल टाइल्स -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-cat="tiles">
+          <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+            <svg class="w-24 h-24 text-slate-400" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="8" y="8" width="22" height="22" rx="2" fill="#f8fafc" stroke="#dc2626"/>
+              <rect x="34" y="8" width="22" height="22" rx="2" fill="#fee2e2" stroke="#dc2626"/>
+              <rect x="8" y="34" width="22" height="22" rx="2" fill="#fee2e2" stroke="#dc2626"/>
+              <rect x="34" y="34" width="22" height="22" rx="2" fill="#f8fafc" stroke="#dc2626"/>
+            </svg>
+            <span class="absolute top-3 left-3 bg-brandBlue text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              टाइल्स
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 leading-snug">प्रीमियम फ्लोर एवं वॉल टाइल्स</h3>
+              <p class="text-xs text-slate-500 mt-1">किचन, बाथरूम, हॉल और पार्किंग के लिए विभिन्न सुंदर डिज़ाइन और साइज़ में उपलब्ध।</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a href="https://wa.me/919708447325?text=नमस्ते,%20मुझे%20टाइल्स%20की%20कीमत%20और%20डिज़ाइन%20देखने%20हैं।" target="_blank" class="w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> रेट पूछें (WhatsApp)
+              </a>
+              <a href="tel:9708447325" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-solid fa-phone text-brandRed"></i> सीधे कॉल करें
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. ग्रेनाइट एवं मार्बल -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-cat="tiles">
+          <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+            <svg class="w-24 h-24 text-slate-600" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="8,12 56,8 56,52 8,56" fill="#e2e8f0" stroke="#334155"/>
+              <path d="M14 20 L50 16 M12 36 L52 32 M10 48 L48 44" stroke="#94a3b8" stroke-dasharray="2 2"/>
+            </svg>
+            <span class="absolute top-3 left-3 bg-brandBlue text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              मार्बल व ग्रेनाइट
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 leading-snug">ग्रेनाइट एवं मार्बल स्लैब</h3>
+              <p class="text-xs text-slate-500 mt-1">किचन काउंटरटॉप, सीढ़ियों एवं फ्लोरिंग हेतु उच्च गुणवत्ता का नेचुरल मार्बल व ब्लैक ग्रेनाइट।</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a href="https://wa.me/919708447325?text=नमस्ते,%20मुझे%20मार्बल%20और%20ग्रेनाइट%20का%20रेट%20जानना%20है।" target="_blank" class="w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> रेट पूछें (WhatsApp)
+              </a>
+              <a href="tel:9708447325" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-solid fa-phone text-brandRed"></i> सीधे कॉल करें
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. PVC पाइप एवं फिटिंग्स -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-cat="plumbing">
+          <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+            <svg class="w-24 h-24 text-sky-600" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="16" cy="20" r="10" fill="#bae6fd" stroke="#0284c7"/>
+              <circle cx="16" cy="44" r="10" fill="#bae6fd" stroke="#0284c7"/>
+              <path d="M16 30 L56 30 M16 44 L56 44 M16 10 L56 10" stroke="#0284c7" stroke-width="3"/>
+            </svg>
+            <span class="absolute top-3 left-3 bg-brandBlue text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              PVC पाइप्स
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 leading-snug">PVC / CPVC पाइप एवं फिटिंग्स</h3>
+              <p class="text-xs text-slate-500 mt-1">घरेलू व बोरिंग पाइपलाइन, एल्बो, टी, सॉकेट, सॉल्वेंट आदि सभी साइज़ में उपलब्ध।</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a href="https://wa.me/919708447325?text=नमस्ते,%20मुझे%20PVC%20पाइप%20और%20फिटिंग्स%20का%20रेट%20चाहिए।" target="_blank" class="w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> रेट पूछें (WhatsApp)
+              </a>
+              <a href="tel:9708447325" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-solid fa-phone text-brandRed"></i> सीधे कॉल करें
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. सैनिटरी - टॉयलेट सीट एवं कमोड -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-cat="sanitary">
+          <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+            <svg class="w-24 h-24 text-slate-500" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="22" y="8" width="20" height="18" rx="2" fill="#ffffff" stroke="#475569"/>
+              <path d="M16 26 C16 42 48 42 48 26 Z" fill="#ffffff" stroke="#475569"/>
+              <path d="M22 42 L22 56 L42 56 L42 42" stroke="#475569"/>
+            </svg>
+            <span class="absolute top-3 left-3 bg-brandBlue text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              सैनिटरी
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 leading-snug">कमोड व इंडियन टॉयलेट सीट</h3>
+              <p class="text-xs text-slate-500 mt-1">वन-पीस वेस्टर्न कमोड, उड़ीसा पैन, सिस्टर्न (फ्लश टैंक) एवं प्रीमियम बाथवेयर।</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a href="https://wa.me/919708447325?text=नमस्ते,%20टॉयलेट%20शीट%20और%20कमोड%20का%20रेट%20बताइए।" target="_blank" class="w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> रेट पूछें (WhatsApp)
+              </a>
+              <a href="tel:9708447325" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-solid fa-phone text-brandRed"></i> सीधे कॉल करें
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. वॉश बेसिन व सिंक -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-cat="sanitary">
+          <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+            <svg class="w-24 h-24 text-slate-500" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <ellipse cx="32" cy="28" rx="22" ry="12" fill="#ffffff" stroke="#475569"/>
+              <ellipse cx="32" cy="28" rx="14" ry="6" fill="#f1f5f9" stroke="#94a3b8"/>
+              <path d="M26 40 L26 56 L38 56 L38 40" stroke="#475569"/>
+            </svg>
+            <span class="absolute top-3 left-3 bg-brandBlue text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              वॉश बेसिन
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 leading-snug">डिजाइनर वॉश बेसिन व सिंक</h3>
+              <p class="text-xs text-slate-500 mt-1">टेबल-टॉप मार्बल प्रिंट बेसिन, पेडेस्टल बेसिन एवं किचन स्टेनलेस स्टील सिंक।</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a href="https://wa.me/919708447325?text=नमस्ते,%20वॉश%20बेसिन%20के%20मॉडल%20और%20रेट%20जानने%20हैं।" target="_blank" class="w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> रेट पूछें (WhatsApp)
+              </a>
+              <a href="tel:9708447325" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-solid fa-phone text-brandRed"></i> सीधे कॉल करें
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. नल एवं शॉवर बाथ फिटिंग्स -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-cat="plumbing">
+          <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+            <svg class="w-24 h-24 text-slate-600" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 28 L34 28 C42 28 46 34 46 42 L46 50" stroke="#0f172a" stroke-width="3"/>
+              <rect x="22" y="16" width="6" height="12" fill="#cbd5e1" stroke="#0f172a"/>
+              <path d="M18 16 L32 16" stroke="#0f172a" stroke-width="3"/>
+              <circle cx="46" cy="54" r="2" fill="#0284c7"/>
+            </svg>
+            <span class="absolute top-3 left-3 bg-brandBlue text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              प्लंबिंग फिटिंग्स
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 leading-snug">स्टील नल, शॉवर व मिक्सर</h3>
+              <p class="text-xs text-slate-500 mt-1">लॉन्ग बॉडी बिब कॉक, वॉल मिक्सर, हैंड शावर और एंगल वाल्व उच्च फिनिशिंग में।</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a href="https://wa.me/919708447325?text=नमस्ते,%20नल%20और%20शॉवर%20फिटिंग्स%20का%20रेट%20दीजिए।" target="_blank" class="w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> रेट पूछें (WhatsApp)
+              </a>
+              <a href="tel:9708447325" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-solid fa-phone text-brandRed"></i> सीधे कॉल करें
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. समरसेबल मोटर व पंप -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-cat="motor">
+          <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+            <svg class="w-24 h-24 text-blue-700" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="24" y="6" width="16" height="42" rx="2" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+              <path d="M28 12 L36 12 M28 20 L36 20 M28 28 L36 28 M28 36 L36 36" stroke="#1d4ed8"/>
+              <rect x="20" y="48" width="24" height="10" rx="2" fill="#1e40af" stroke="#1e3a8a"/>
+            </svg>
+            <span class="absolute top-3 left-3 bg-brandBlue text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              मोटर व पंप
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 leading-snug">समरसेबल मोटर एवं वाटर पंप</h3>
+              <p class="text-xs text-slate-500 mt-1">0.5 HP, 1 HP, 2 HP तक के हेवी-ड्यूटी मोटर, टूलू पंप एवं बोरिंग समरसेबल सेट्स।</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a href="https://wa.me/919708447325?text=नमस्ते,%20समरसेबल%20मोटर%20का%20रेट%20और%20HP%20बताइए।" target="_blank" class="w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> रेट पूछें (WhatsApp)
+              </a>
+              <a href="tel:9708447325" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-solid fa-phone text-brandRed"></i> सीधे कॉल करें
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. पानी की टंकी (Water Tanks) -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-cat="motor">
+          <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+            <svg class="w-24 h-24 text-cyan-600" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="14" y="14" width="36" height="42" rx="4" fill="#cffafe" stroke="#0891b2" stroke-width="2"/>
+              <ellipse cx="32" cy="14" rx="14" ry="4" fill="#0891b2"/>
+              <line x1="14" y1="26" x2="50" y2="26" stroke="#0891b2"/>
+              <line x1="14" y1="38" x2="50" y2="38" stroke="#0891b2"/>
+            </svg>
+            <span class="absolute top-3 left-3 bg-brandBlue text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              पानी टंकी
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 leading-snug">पानी की टंकी (3-लेयर / 4-लेयर)</h3>
+              <p class="text-xs text-slate-500 mt-1">300L, 500L, 1000L की भारी मजबूती वाली वॉटर स्टोरेज टंकी और फिटिंग फिटमेंट्स।</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a href="https://wa.me/919708447325?text=नमस्ते,%20पानी%20की%20टंकी%20(Water%20Tank)%20का%20रेट%20चाहिए।" target="_blank" class="w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> रेट पूछें (WhatsApp)
+              </a>
+              <a href="tel:9708447325" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-solid fa-phone text-brandRed"></i> सीधे कॉल करें
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. चापाकल एवं पार्ट्स -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-cat="motor">
+          <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+            <svg class="w-24 h-24 text-emerald-700" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M30 18 L30 56 M36 18 L36 56" stroke="#047857" stroke-width="2"/>
+              <path d="M32 20 L16 30" stroke="#047857" stroke-width="4"/>
+              <path d="M36 28 L48 24 L52 38" stroke="#047857" stroke-width="3" fill="#a7f3d0"/>
+              <rect x="24" y="52" width="18" height="6" fill="#047857"/>
+            </svg>
+            <span class="absolute top-3 left-3 bg-brandBlue text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              चापाकल
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 leading-snug">चापाकल (हैंडपंप) एवं सभी पार्ट्स</h3>
+              <p class="text-xs text-slate-500 mt-1">नंबर 6 चापाकल, पिस्टन, वॉशर, रॉड, पाइप और दुरुस्ती हेतु सभी छोटे-बड़े पार्ट्स।</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a href="https://wa.me/919708447325?text=नमस्ते,%20चापाकल%20और%20उसके%20सामान%20का%20रेट%20दीजिए।" target="_blank" class="w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> रेट पूछें (WhatsApp)
+              </a>
+              <a href="tel:9708447325" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-solid fa-phone text-brandRed"></i> सीधे कॉल करें
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. प्लाईवुड एवं लकड़ी के दरवाजे -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-cat="hardware">
+          <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+            <svg class="w-24 h-24 text-amber-800" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="18" y="8" width="28" height="48" rx="2" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+              <rect x="22" y="14" width="20" height="16" fill="#fef3c7" stroke="#b45309"/>
+              <rect x="22" y="34" width="20" height="16" fill="#fef3c7" stroke="#b45309"/>
+              <circle cx="42" cy="33" r="1.5" fill="#78350f"/>
+            </svg>
+            <span class="absolute top-3 left-3 bg-brandBlue text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              दरवाजे व प्लाईवुड
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 leading-snug">प्लाईवुड व डिजाइनर लकड़ी दरवाजे</h3>
+              <p class="text-xs text-slate-500 mt-1">वाटरप्रूफ प्लाईवुड शीट्स, फ्लश डोर, कार्विंग और मॉडर्न मेम्ब्रेन दरवाजे।</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a href="https://wa.me/919708447325?text=नमस्ते,%20दरवाजे%20और%20प्लाईवुड%20की%20कीमत%20बताएं।" target="_blank" class="w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> रेट पूछें (WhatsApp)
+              </a>
+              <a href="tel:9708447325" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-solid fa-phone text-brandRed"></i> सीधे कॉल करें
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. हार्डवेयर टूल्स व पार्ट्स -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-cat="hardware">
+          <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+            <svg class="w-24 h-24 text-slate-700" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 48 L32 28 M28 24 L36 32" stroke="#475569" stroke-width="4"/>
+              <circle cx="44" cy="20" r="10" stroke="#0f172a" fill="#e2e8f0"/>
+              <path d="M40 20 L48 20" stroke="#0f172a" stroke-width="2"/>
+            </svg>
+            <span class="absolute top-3 left-3 bg-brandBlue text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              हार्डवेयर पार्ट्स
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 leading-snug">हार्डवेयर पार्ट्स एवं टूल्स</h3>
+              <p class="text-xs text-slate-500 mt-1">कब्जे, सिटकनी, ताले (Locks), स्क्रू, कीलें एवं सभी प्रकार के हार्डवेयर फिटिंग्स।</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a href="https://wa.me/919708447325?text=नमस्ते,%20हार्डवेयर%20फिटिंग्स%20सामान%20का%20रेट%20चाहिए।" target="_blank" class="w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> रेट पूछें (WhatsApp)
+              </a>
+              <a href="tel:9708447325" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-solid fa-phone text-brandRed"></i> सीधे कॉल करें
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. बिल्डिंग मैटेरियल व अन्य पार्ट्स -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-cat="hardware">
+          <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+            <svg class="w-24 h-24 text-amber-600" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="8" y="32" width="22" height="12" fill="#fed7aa" stroke="#c2410c"/>
+              <rect x="34" y="32" width="22" height="12" fill="#fed7aa" stroke="#c2410c"/>
+              <rect x="20" y="18" width="24" height="12" fill="#fdba74" stroke="#c2410c"/>
+            </svg>
+            <span class="absolute top-3 left-3 bg-brandBlue text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              अन्य मैटेरियल
+            </span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 leading-snug">अन्य बिल्डिंग व कंस्ट्रक्शन सामग्री</h3>
+              <p class="text-xs text-slate-500 mt-1">मकान के काम में लगने वाला अन्य जरूरी हार्डवेयर एवं सैनिटरी सामान प्रचुर मात्रा में उपलब्ध।</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a href="https://wa.me/919708447325?text=नमस्ते,%20मुझे%20बिल्डिंग%20मटेरियल%20के%20बारे%20में%20बात%20करनी%20है।" target="_blank" class="w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> रेट पूछें (WhatsApp)
+              </a>
+              <a href="tel:9708447325" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                <i class="fa-solid fa-phone text-brandRed"></i> सीधे कॉल करें
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Banner Strip Below Products -->
+      <div class="mt-12 bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-md text-center max-w-4xl mx-auto">
+        <h3 class="text-xl sm:text-2xl font-bold text-slate-900">
+          क्या आप नया मकान बनवा रहे हैं या रेनोवेशन कर रहे हैं?
+        </h3>
+        <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl mx-auto">
+          सामान की पूरी लिस्ट हमें व्हाट्सएप पर भेजें, हम आपको सबसे कम थोक दर और मननपुर व पूरे चानन में डिलीवरी की पूरी जानकारी देंगे।
+        </p>
+        <div class="mt-5 flex flex-wrap justify-center gap-3">
+          <a href="https://wa.me/919708447325?text=नमस्ते%20मुकेश%20जी,%20यह%20रही%20मेरे%20मकान%20के%20सामान%20की%20लिस्ट।%20कृपया%20रेट%20बताएं।" target="_blank" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm sm:text-base flex items-center gap-2 shadow-lg transition">
+            <i class="fa-brands fa-whatsapp text-xl"></i> लिस्ट व्हाट्सएप पर भेजें
+          </a>
+          <a href="tel:6201954987" class="px-6 py-3 rounded-xl bg-brandRed hover:bg-red-700 text-white font-bold text-sm sm:text-base flex items-center gap-2 shadow-lg transition">
+            <i class="fa-solid fa-phone"></i> 6201954987 पर कॉल करें
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Us / Features Section -->
+  <section id="why-us" class="py-14 sm:py-20 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-brandRed font-bold text-xs sm:text-sm uppercase tracking-wider bg-red-100 px-3 py-1 rounded-full">
+          हमारी खासियत
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+          श्री हरि इन्टरप्राइजेज ही क्यों चुनें?
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          मननपुर बाजार में गुणवत्ता, सही सलाह और ग्राहकों के भरोसे का दूसरा नाम।
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Feature 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brandRed transition hover:shadow-lg">
+          <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-2xl font-bold mb-4">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">संपूर्ण समाधान एक ही छत के नीचे</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+            टाइल्स, मार्बल से लेकर नल, टंकी, मोटर, चापाकल और प्लाईवुड का सारा सामान एक ही दुकान पर मिल जाता है।
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brandRed transition hover:shadow-lg">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-brandGold flex items-center justify-center text-2xl font-bold mb-4">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">पूरे चानन में होम डिलीवरी</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+            सामान की लोडिंग और आपके घर या कंस्ट्रक्शन साइट तक सुरक्षित पहुंचाने की पूरी सुविधा उपलब्ध है।
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brandRed transition hover:shadow-lg">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-brandBlue flex items-center justify-center text-2xl font-bold mb-4">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">उचित एवं थोक मूल्य</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+            हम सीधे निर्माताओं और बड़े वितरकों से जुड़कर आपको बाजार में सबसे किफायती और सही मूल्य प्रदान करते हैं।
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brandRed transition hover:shadow-lg">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-4">
+            <i class="fa-solid fa-qrcode"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">कैश व UPI भुगतान</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+            PhonePe, Google Pay, Paytm, UPI और नकद भुगतान की सहज व सुरक्षित सुविधा उपलब्ध है।
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Quick Estimate / Inquiry Form -->
+  <section class="py-14 sm:py-20 bg-slate-100 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200">
+        <div class="text-center mb-8">
+          <span class="text-brandRed font-bold text-xs uppercase tracking-wider bg-red-50 px-3 py-1 rounded-full">
+            क्विक रेट इन्क्वायरी
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
+            सामान की जरूरत बताएं और तुरंत रेट पाएं
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm mt-1">
+            नीचे फॉर्म भरें, जानकारी सीधे प्रो. मुकेश कुमार जी को WhatsApp पर भेज दी जाएगी।
+          </p>
+        </div>
+
+        <form id="inquiryForm" onsubmit="handleInquirySubmit(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">आपका नाम *</label>
+              <input type="text" id="custName" required placeholder="उदा. रमेश कुमार" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-brandRed">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">मोबाइल नंबर *</label>
+              <input type="tel" id="custPhone" required placeholder="उदा. 97084XXXXX" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-brandRed">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">आपका गाँव / कस्बा (चानन क्षेत्र)</label>
+              <input type="text" id="custLocation" placeholder="उदा. मननपुर / चानन" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-brandRed">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">किस सामान का रेट चाहिए?</label>
+              <select id="custProduct" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-brandRed bg-white">
+                <option value="टाइल्स और मार्बल">टाइल्स और मार्बल</option>
+                <option value="प्लंबिंग और PVC पाइप">प्लंबिंग और PVC पाइप</option>
+                <option value="सैनिटरी / कमोड / बेसिन">सैनिटरी / कमोड / बेसिन</option>
+                <option value="समरसेबल मोटर / टंकी / चापाकल">समरसेबल मोटर / टंकी / चापाकल</option>
+                <option value="प्लाईवुड और दरवाजे">प्लाईवुड और दरवाजे</option>
+                <option value="सभी सामानों की संपूर्ण लिस्ट">सभी सामानों की संपूर्ण लिस्ट</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">अतिरिक्त विवरण या मात्रा (वैकल्पिक)</label>
+            <textarea id="custDetails" rows="3" placeholder="उदा. 2 कमरों के लिए टाइल्स और 1 HP मोटर का रेट..." class="w-full px-4 py-2 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-brandRed"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base flex items-center justify-center gap-2 shadow-lg shadow-emerald-700/20 transition">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            व्हाट्सएप पर रेट लिस्ट मँगवाएं
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Location & Contact Section -->
+  <section id="contact" class="py-14 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Contact Details -->
+        <div class="lg:col-span-6 space-y-6">
+          <div>
+            <span class="text-brandRed font-bold text-xs uppercase tracking-wider bg-red-100 px-3 py-1 rounded-full">
+              दुकान पर पधारें
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+              संपर्क सूत्र एवं दुकान का पता
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-2">
+              यदि आप चानन या आसपास के क्षेत्र में हैं, तो सीधे दुकान पर आकर विभिन्न डिज़ाइनों को स्वयं देख सकते हैं।
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            
+            <!-- Address Card -->
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <div class="w-12 h-12 rounded-xl bg-red-100 text-brandRed flex items-center justify-center text-xl shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">दुकान का पूरा पता</h4>
+                <p class="text-xs sm:text-sm text-slate-700 mt-1 leading-relaxed">
+                  मननपुर बाजार, दुर्गा मंदिर रोड, स्टेट बैंक के बगल में, चानन, बिहार
+                </p>
+                <span class="inline-block mt-2 text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                  <i class="fa-solid fa-landmark"></i> लैंडमार्क: स्टेट बैंक एवं दुर्गा मंदिर के समीप
+                </span>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <div class="w-12 h-12 rounded-xl bg-blue-100 text-brandBlue flex items-center justify-center text-xl shrink-0">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="flex-1">
+                <h4 class="text-sm font-bold text-slate-900">फोन नंबर (कॉल / व्हाट्सएप)</h4>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <a href="tel:9708447325" class="px-3 py-1.5 bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-800 hover:border-brandRed flex items-center gap-1.5 shadow-sm">
+                    <i class="fa-solid fa-phone text-brandRed"></i> 9708447325
+                  </a>
+                  <a href="tel:6201954987" class="px-3 py-1.5 bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-800 hover:border-brandRed flex items-center gap-1.5 shadow-sm">
+                    <i class="fa-solid fa-phone text-brandRed"></i> 6201954987
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hours Card -->
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 text-brandGold flex items-center justify-center text-xl shrink-0">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">खुलने का समय</h4>
+                <p class="text-xs sm:text-sm text-slate-700 mt-0.5">
+                  सोमवार से रविवार: <strong>सुबह 8:00 बजे से रात्रि 8:00 बजे तक</strong>
+                </p>
+                <p class="text-[11px] text-slate-500 mt-1">
+                  (रविवार या त्योहारों के दिन आने से पूर्व कृपया फोन पर पुष्टि कर लें)
+                </p>
+              </div>
+            </div>
+
+            <!-- Proprietor Card -->
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-brandBlue text-white shadow-md">
+              <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-2xl text-yellow-300 font-bold shrink-0">
+                <i class="fa-solid fa-user-check"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-300">दुकान मालिक / प्रोप्राइटर</span>
+                <h4 class="text-base font-extrabold text-white">मुकेश कुमार</h4>
+                <p class="text-xs text-yellow-300 font-medium mt-0.5">आपकी सेवा और संतुष्टि ही हमारा मुख्य ध्येय है।</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Map & Delivery Areas Info -->
+        <div class="lg:col-span-6 space-y-6">
+          
+          <!-- Visual Map Frame -->
+          <div class="rounded-2xl overflow-hidden border border-slate-300 shadow-md bg-slate-100 relative">
+            <div class="p-3 bg-brandBlue text-white flex items-center justify-between text-xs font-bold">
+              <span><i class="fa-solid fa-map-location-dot text-yellow-400 mr-1.5"></i> दुकान का नक्शा (Google Maps)</span>
+              <span class="text-slate-300">मननपुर बाजार, चानन</span>
+            </div>
+            
+            <!-- Google Maps Embed for Mananpur Bazar -->
+            <div class="w-full h-72 sm:h-80 bg-slate-200">
+              <iframe 
+                title="श्री हरि इन्टरप्राइजेज मननपुर बाजार"
+                class="w-full h-full border-0"
+                src="https://maps.google.com/maps?q=Mananpur+Bazar+Chanan+Bihar&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <div class="p-3 bg-white text-center border-t border-slate-200">
+              <a href="https://maps.google.com/maps?q=Mananpur+Bazar+Chanan+Bihar" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-brandRed hover:underline">
+                <i class="fa-solid fa-diamond-turn-right"></i> गूगल मैप पर दिशा (Directions) देखें
+              </a>
+            </div>
+          </div>
+
+          <!-- Home Delivery Info Box -->
+          <div class="p-5 rounded-2xl bg-amber-50 border border-amber-200">
+            <div class="flex items-center gap-2 text-amber-900 font-bold text-sm mb-2">
+              <i class="fa-solid fa-truck-ramp-box text-brandRed text-lg"></i>
+              <span>होम डिलीवरी सेवा क्षेत्र (Coverage Area)</span>
+            </div>
+            <p class="text-xs sm:text-sm text-amber-950 leading-relaxed">
+              मननपुर, मननपुर बाजार, चानन प्रखंड के सभी गाँव, संग्रामपुर, कुंदर, बन्नु बगीचा, गोपालपुर एवं आसपास के समस्त क्षेत्रों में सुरक्षित वाहन द्वारा आपके घर तक सामान पहुँचाया जाता है।
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brandBlue text-white border-t-4 border-brandRed pt-12 pb-24 lg:pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-slate-700/60 text-xs sm:text-sm">
+        
+        <!-- Col 1: Store Intro -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 rounded-lg bg-brandRed flex items-center justify-center font-black text-white text-lg">
+              श्री
+            </div>
+            <span class="text-lg font-black text-white">श्री हरि इन्टरप्राइजेज</span>
+          </div>
+          <p class="text-slate-300 leading-relaxed text-xs">
+            टाइल्स, मार्बल, ग्रेनाइट, प्लंबिंग, सैनिटरी एवं हार्डवेयर पार्ट्स का संपूर्ण भंडार। मननपुर बाजार, चानन (बिहार)।
+          </p>
+          <div class="text-yellow-400 font-bold text-xs pt-1">
+            ॥ श्री गणेशाय नमः ॥
+          </div>
+        </div>
+
+        <!-- Col 2: Products list -->
+        <div class="space-y-2">
+          <h4 class="font-bold text-white text-sm tracking-wider uppercase border-b border-slate-700 pb-1.5 inline-block">
+            उपलब्ध सामान
+          </h4>
+          <ul class="space-y-1.5 text-slate-300 text-xs">
+            <li><i class="fa-solid fa-angle-right text-brandRed mr-1"></i> प्रीमियम टाइल्स व मार्बल</li>
+            <li><i class="fa-solid fa-angle-right text-brandRed mr-1"></i> ग्रेनाइट स्लैब (किचन व सीढ़ी)</li>
+            <li><i class="fa-solid fa-angle-right text-brandRed mr-1"></i> PVC / CPVC पाइप एवं फिटिंग्स</li>
+            <li><i class="fa-solid fa-angle-right text-brandRed mr-1"></i> कमोड, वॉश बेसिन व सैनिटरी</li>
+            <li><i class="fa-solid fa-angle-right text-brandRed mr-1"></i> समरसेबल मोटर व वाटर पंप</li>
+            <li><i class="fa-solid fa-angle-right text-brandRed mr-1"></i> पानी टंकी, चापाकल व पार्ट्स</li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Contact -->
+        <div class="space-y-2">
+          <h4 class="font-bold text-white text-sm tracking-wider uppercase border-b border-slate-700 pb-1.5 inline-block">
+            संपर्क एवं दुकान
+          </h4>
+          <div class="space-y-2 text-slate-300 text-xs">
+            <p><strong class="text-white">प्रोप्राइटर:</strong> मुकेश कुमार</p>
+            <p><strong class="text-white">फोन:</strong> 9708447325, 6201954987</p>
+            <p><strong class="text-white">पता:</strong> मननपुर बाजार, दुर्गा मंदिर रोड, स्टेट बैंक के बगल में, चानन (बिहार)</p>
+            <p><strong class="text-white">समय:</strong> सुबह 8:00 से रात 8:00 बजे तक</p>
+          </div>
+        </div>
+
+        <!-- Col 4: Trust & Payment -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm tracking-wider uppercase border-b border-slate-700 pb-1.5 inline-block">
+            भुगतान एवं सुविधा
+          </h4>
+          <p class="text-slate-300 text-xs">
+            ग्राहक सुविधा के लिए कैश के अलावा Google Pay, PhonePe, Paytm द्वारा तुरंत पेमेंट स्वीकार्य है।
+          </p>
+          <div class="flex items-center gap-2 text-2xl text-slate-300">
+            <i class="fa-solid fa-wallet text-emerald-400"></i>
+            <i class="fa-solid fa-money-bill-transfer text-yellow-400"></i>
+            <i class="fa-solid fa-truck text-sky-400"></i>
+          </div>
+          <div class="pt-2">
+            <a href="https://wa.me/919708447325" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3.5 py-2 rounded-lg text-xs transition">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+              WhatsApp पर चैट करें
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-2 text-center sm:text-left">
+        <div>
+          © 2026 श्री हरि इन्टरप्राइजेज (मननपुर, चानन) | सर्वाधिकार सुरक्षित
+        </div>
+        <div class="text-slate-400">
+          प्रो. मुकेश कुमार | मोबाइल: 9708447325
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Action Bottom Bar (For instant Call & WhatsApp) -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 px-3 py-2 flex items-center justify-between gap-2 lg:hidden shadow-[0_-4px_10px_rgba(0,0,0,0.08)]">
+    
+    <a href="tel:9708447325" class="flex-1 bg-brandRed hover:bg-red-700 text-white py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow transition">
+      <i class="fa-solid fa-phone"></i>
+      <span>कॉल करें (9708447325)</span>
+    </a>
+
+    <a href="https://wa.me/919708447325?text=नमस्ते%20मुकेश%20जी,%20मुझे%20श्री%20हरि%20इन्टरप्राइजेज%20से%20सामान%20का%20रेट%20और%20डिलीवरी%20की%20जानकारी%20चाहिए।" target="_blank" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow transition">
+      <i class="fa-brands fa-whatsapp text-lg"></i>
+      <span>व्हाट्सएप पर रेट पूछें</span>
+    </a>
+
+  </div>
+
+  <!-- JavaScript for Category Filter and Form WhatsApp Redirection -->
+  <script>
+    // Category Filter Logic
+    function filterCategory(cat) {
+      // Update Tab Styles
+      const buttons = document.querySelectorAll('.cat-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-brandRed', 'text-white', 'shadow');
+        btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+      });
+
+      // Highlight clicked button
+      event.target.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+      event.target.classList.add('bg-brandRed', 'text-white', 'shadow');
+
+      // Filter Cards
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Handle Form submission and send directly to WhatsApp
+    function handleInquirySubmit(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const location = document.getElementById('custLocation').value.trim() || 'चानन क्षेत्र';
+      const product = document.getElementById('custProduct').value;
+      const details = document.getElementById('custDetails').value.trim() || 'रेट और उपलब्धता की जानकारी';
+
+      const message = `*नमस्ते मुकेश जी (श्री हरि इन्टरप्राइजेज)*,%0A%0Aमुझे सामान का रेट जानना है:%0A- *ग्राहक का नाम:* ${encodeURIComponent(name)}%0A- *मोबाइल:* ${encodeURIComponent(phone)}%0A- *स्थान/गाँव:* ${encodeURIComponent(location)}%0A- *सामान कैटेगरी:* ${encodeURIComponent(product)}%0A- *विवरण:* ${encodeURIComponent(details)}%0A%0Aकृपया उचित रेट और डिलीवरी की जानकारी दें।`;
+
+      // Open WhatsApp to primary business number
+      const whatsappUrl = `https://wa.me/919708447325?text=${message}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+
+</body>
+</html>
